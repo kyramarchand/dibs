@@ -112,6 +112,16 @@ button {
   font-weight: bold;
   font-size: 1.2rem;
 }
+
+/*so submit button doesnt take up width of screen*/
+.logout-form button {
+  width: auto;
+  margin: 0;
+  padding: 0.4rem 0.9rem;
+  background: var(--dark-text);
+  color: var(--dark);
+}
+
 @media (max-width: 600px) {
   h1 {
     font-size: 1.5rem;
