@@ -1,0 +1,87 @@
+:root {
+  --bg: #c9c8c6;
+  --text: #13130b;
+  --dark: #353423;
+  --dark-text: #c9c8c6;
+  --footer-bg: #555533;
+  --font-main: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+body {
+  font-family: var(--font-main);
+  margin: 0;
+  line-height: 1.5;
+  color: var(--text);
+  background: var(--bg);
+}
+
+header,
+main,
+footer {
+  padding: 1rem; /* on phones*/
+  padding-inline: max(1rem, calc((100% - 700px) / 2)); /* makes border extend full screen*/
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--dark);
+  color: var(--dark-text);
+}
+
+nav a {
+  margin-left: 1rem;
+  color: var(--dark-text);
+}
+
+.hero {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.7rem 1.2rem;
+  margin: 0.4rem;
+  background: var(--dark);
+  color: var(--dark-text);
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.button.secondary {
+  background: var(--bg);
+  color: var(--dark);
+  border: 2px solid var(--dark);
+}
+
+input,
+button {
+  display: block;
+  width: 100%;
+  padding: 0.6rem;
+  margin-bottom: 1rem;
+  font-family: inherit;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+footer {
+  text-align: center;
+  color: var(--dark-text);
+  background: var(--footer-bg);
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  .hero h2 {
+    font-size: 1.3rem;
+  }
+  .button {
+    display: block;
+    margin: 0.6rem 0;
+  }
+}
