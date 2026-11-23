@@ -75,7 +75,7 @@ footer {
   background: var(--footer-bg);
 }
 
-/* ai formatting forms to match colour palette*/
+/* ai formatting log in and sign up to match colour palette*/
 
 label {
   display: block;
@@ -94,6 +94,23 @@ button {
   border: none;
   border-radius: 6px;
   cursor: pointer;
+}
+/* formatting for event*/
+.event-card {
+  background: var(--dark);
+  color: var(--dark-text);
+  padding: 1rem 1.5rem;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+}
+
+.event-date {
+  font-style: italic;
+}
+
+.seats {
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 @media (max-width: 600px) {
   h1 {

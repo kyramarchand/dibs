@@ -1,11 +1,43 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Dibs! Event</title>
+    <title>Dibs! Sample Event</title>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
 
-  <body></body>
+  <body>
+    <header>
+      <h1><a href="index.html">Dibs!</a></h1>
+      <nav>
+        <a href="login.html">Log in</a>
+        <a href="register.html">Sign up</a>
+      </nav>
+    </header>
+    <main>
+      <section class="event-card">
+        <h2>Weekly Performative Male Contest</h2>
+        <p class="event-date">December 28, 2026 - 7:00PM</p>
+        <p>Gather around the park, we're voting on the most performative man.</p>
+        <p class="seats">5 of 30 spots left</p>
+      </section>
+      <section>
+        <h2>Reserve your spot</h2>
+        <form action="/rsvp" method="post">
+          <label for="name">Your name</label>
+          <input type="text" id="name" required maxlength="80" autocomplete="name" />
+
+          <label for="email">Your email</label>
+          <input type="email" id="email" name="email" required autocomplete="email" />
+
+          <button type="submit">Dibs!</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&middot;Dibs! by Kyra Marchand for SOEN 287&middot;</p>
+      <p>&middot;Fall 2026&middot;</p>
+    </footer>
+  </body>
 </html>
