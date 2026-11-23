@@ -7,5 +7,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
 
-  <body></body>
+  <body>
+    <header>
+      <h1><a href="index.html">Dibs!</a></h1>
+      <nav>
+        <a href="login.html">Log in</a>
+        <a href="register.html">Sign up</a>
+      </nav>
+    </header>
+    <main>
+      <form>
+        <h2>Create an account</h2>
+        <form action="/register" method="post"></form>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required autocomplete="email" />
+
+        <label for="password">Password (at least 8 characters)</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          required
+          minlength="8"
+          autocomplete="new-password"
+        />
+        <button type="submit">Sign up</button>
+      </form>
+      <p>Already have a Dibs! account? <a href="login.html">Log in</a></p>
+    </main>
+    <footer>
+      <p>&middot;Dibs! by Kyra Marchand for SOEN 287&middot;</p>
+      <p>&middot;Fall 2026&middot;</p>
+    </footer>
+  </body>
 </html>
